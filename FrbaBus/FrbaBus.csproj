@@ -99,6 +99,13 @@
     <Compile Include="Abm Ciudades\ModifCiudad.Designer.cs">
       <DependentUpon>ModifCiudad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Abm Recorrido\Dialogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Recorrido\Dialogo.Designer.cs">
+      <DependentUpon>Dialogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abm Recorrido\ParametrosIncorrectosException.cs" />
     <Compile Include="Abm Recorrido\VisualizarRecorrido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Abm Ciudades\ModifCiudad.resx">
       <DependentUpon>ModifCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Recorrido\Dialogo.resx">
+      <DependentUpon>Dialogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Abm Recorrido\VisualizarRecorrido.resx">
       <DependentUpon>VisualizarRecorrido.cs</DependentUpon>
