@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace FrbaBus.Abm_Ciudades
+namespace FrbaBus
 {
-    public partial class Dialogo : Form
+    public partial class Dialogo : Form1
     {
         public Dialogo(String mensaje,String botonLeyenda)
         {
             InitializeComponent();
-            label1.Text = mensaje;
+            String[] mensajes = mensaje.Split(';');
+            listBox1.Items.AddRange(mensajes);
+            listBox1.Enabled = false;
             button1.Text = botonLeyenda;
         }
 

@@ -39,6 +39,28 @@ namespace FrbaBus.Abm_Recorrido
 
         }
 
+        public VisualizarRecorrido(String Leyenda,
+                                    String Origen,
+                                    String Destino,
+                                    String Servicio) // Para bajas
+        {
+            InitializeComponent();
+
+            label1.Text = Leyenda;
+
+            listBox1.Height = listBox1.ItemHeight * 6;
+
+            listBox1.Items.Add("Origen\t");
+            listBox1.Items.Add("Destino\t");
+            listBox1.Items.Add("Servicio\t");
+            listBox1.Items.Add(Origen);
+            listBox1.Items.Add(Destino);
+            listBox1.Items.Add(Servicio);
+            
+            listBox1.MultiColumn = true;
+
+        }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
